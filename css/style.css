@@ -1,0 +1,18 @@
+table {
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid black;
+    padding: 4px;
+}
+
+fieldset {
+    width: fit-content;
+    border: 1px solid black;
+}
+
+.animal strong {
+    margin-bottom: 99px;
+}
