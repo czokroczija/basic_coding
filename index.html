@@ -10,7 +10,14 @@
         table,
         th,
         td {
-            border: solid 1px black;
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 2px;
+        }
+
+        fieldset {
+            width: fit-content;
+            border: 1px solid black;
         }
     </style>
 </head>
@@ -76,90 +83,94 @@
     </ol>
 
 
-
+    <!-- Table -->
     <h1>Animal Facts</h1>
-    <table style="width:60%; border-collapse: collapse;">
+
+    <table style="width: 35%; border-collapse: collapse;">
         <tr>
             <th rowspan="2">Family</th>
-            <th colspan="2" rowspan="2">Animal</th>
-            <th colspan="3" class="center">Lifestyle</th>
+            <th colspan="2">Animal</th>
+            <th colspan="3">Lifestyle</th>
         </tr>
         <tr>
+            <th>Name</th>
+            <th>Class</th>
             <th>Diet</th>
             <th>Habitat</th>
-            <th>Most active</th>
+            <th>Active</th>
         </tr>
-
         <tr>
             <td rowspan="2">Feline</td>
             <td>Lynx</td>
-            <td><i>Lynx</i></td>
+            <td>Mammal</td>
             <td>Carnivore</td>
-            <td>Forest</td>
-            <td>Dawn and dusk</td>
+            <td>Savanna</td>
+            <td>Dawn and Dusk</td>
         </tr>
         <tr>
             <td>Lion</td>
-            <td><i>Panthera leo</i></td>
+            <td>Mammal</td>
             <td>Carnivore</td>
-            <td>Savanna</td>
+            <td>Forest</td>
             <td>Night</td>
         </tr>
-
         <tr>
             <td rowspan="2">Canine</td>
             <td>Wolf</td>
-            <td><i>Canis lupus</i></td>
+            <td>Mammal</td>
             <td>Carnivore</td>
-            <td>Forest, tundra</td>
-            <td>Dawn and dusk</td>
+            <td>Savanna</td>
+            <td>Dawn and Dusk</td>
         </tr>
         <tr>
             <td>Coyote</td>
-            <td><i>Canis latrans</i></td>
+            <td>Mammal</td>
             <td>Omnivore</td>
-            <td>Grassland, desert</td>
+            <td>Forest</td>
             <td>Night</td>
         </tr>
-
         <tr>
             <td rowspan="2">Bird</td>
             <td>Parrot</td>
-            <td><i>Psittaciformes</i></td>
-            <td>Seeds, nuts,<br>fruit</td>
+            <td>Aves</td>
+            <td>Herbivore</td>
             <td>Rainforest</td>
             <td>Day</td>
         </tr>
         <tr>
             <td>Owl</td>
-            <td><i>Strigiformes</i></td>
+            <td>Aves</td>
             <td>Carnivore</td>
             <td>Forest</td>
             <td>Night</td>
         </tr>
-
         <tr>
-            <td colspan="6" class="center"><i>All animals can be visited every day, 09:00 to 17:00.</i></td>
+            <td colspan="6" style="text-align: center;">
+                <i>All animals can be visited every day, 09:00 to 17:00.</i>
+            </td>
         </tr>
     </table>
 
-
-
+    <!-- Form -->
     <h1>Plan Your Visit</h1>
     <form>
-        <label for="fullname">Full name</label>
-        <input type="text" id="fullname" name="fullname" placeholder="e.g. Fuad Sufyan"><br>
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" name="fullname" placeholder="e.g. Perrell Brown">
+        <br>
 
         <label for="email">Email</label>
-        <input type="email" id="email" name="email" placeholder="you@example.com"><br>
+        <input type="email" id="email" name="email" placeholder="you@example.com">
+        <br>
 
-        <label for="visitdate">Visit date</label>
-        <input type="date" id="visitdate" name="visitdate"><br>
+        <label for="visitdate">Visit Date</label>
+        <input type="date" id="visitdate" name="visitdate">
+        <br>
 
         <label for="tickets">Tickets</label>
-        <input type="number" id="tickets" name="tickets" value="1" min="1"><br>
+        <input type="number" id="tickets" name="tickets" value="1" min="1">
+        <br>
 
-        <label for="tickettype">Ticket type</label>
+        <label for="tickettype">Ticket Type</label>
         <select id="tickettype" name="tickettype">
             <option value="Adult">Adult</option>
             <option value="Student">Student</option>
@@ -184,12 +195,15 @@
         <label for="newsletter">Send me news about the zoo</label>
         <br>
 
-        <label for="requests">Questions or requests</label>
-        <textarea id="requests" name="requests" rows="5" cols="28"></textarea>
+        <label for="requests">Questions or Requests</label>
+        <br>
+        
+        <textarea id="requests" name="requests" rows="5" cols="fit-content"></textarea>
         <br>
 
-        <button type="button">Book tickets</button>
+        <button type="button">Book Tickets</button>
     </form>
+
 </body>
 
 </html>
