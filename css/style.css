@@ -1,3 +1,35 @@
+.top {
+    text-align: center;
+}
+
+.animal-family {
+    text-align: center;
+}
+
+.family-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+.family-list > li {
+    width: 500px;
+}
+
+.animal-title {
+    text-align: left;
+    font-size: 18.72px;
+    margin-bottom: 12px;
+}
+
+.animal-image img {
+    width: 500px;
+}
+
+/* Table */
 table {
     border-collapse: collapse;
 }
@@ -8,11 +40,8 @@ td {
     padding: 4px;
 }
 
+/* Form */
 fieldset {
     width: fit-content;
     border: 1px solid black;
-}
-
-.animal strong {
-    margin-bottom: 99px;
 }
