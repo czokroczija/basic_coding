@@ -1,42 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-/* General */
 body {
-    margin: 0;
+  font-family: Arial, sans-serif;
 }
 
 /* Header */
 .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 16px 5%;
-    background: white;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: 64px;
+  padding: 0 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f5f7f3;
+  box-shadow: 0 2px 4px #0002;
 }
 
-.text-title a {
-    color: black;
-    font-size: 20px;
-    text-decoration: none;
+.logo {
+  color: #246b45;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Navigation */
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar a {
+  color: #203c2b;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.navbar button {
+  border: none;
+  background: transparent;
+  color: #203c2b;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.navbar button:hover,
+.navbar a:hover {
+  color: #39865a;
 }
 
 /* Hero */
 .hero {
-    height: 512px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
-    background: url("../img/zoo.jpg") center / cover no-repeat;
-}
-
-.btn {
-    padding: 10px 20px;
-    border-radius: 5px;
-    background: white;
-    color: blue;
-    text-decoration: none;
+  height: 512px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  background: url("../img/zoo.jpg") center / cover no-repeat;
 }
 
 /* Animal Family */
